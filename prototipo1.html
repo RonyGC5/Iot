@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOTIPO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="imagenes/epie.png" alt="epie" class="fondo-epie">
+        
+        <div class="menu container">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" >Mediciones</a></li>
+                    <li><a href="#" >Estadisticas</a></li>
+                    <li><a href="#" >Datos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-title container">
+            <div class="header-txt">
+                <h1>
+                    PROTOTIPO DE AIREACIÓN PARA OPTIMIZAR 
+                    <span>LA TRANSFERENCIA DE OXÍGENO DISUELTO</span>
+                    CON MONITOREO IOT EN LA CRIANZA DE TRUCHAS</h1>
+            </div>
+
+        </div>
+    </header>
+    
+    <section class="sensors container">
+
+        <div class="sensor-product">
+            <img src="imagenes/agua.png" alt="">
+            <div class="sensor-title">
+                <h3>Oxigeno disuelto</h3>
+           </div>
+           <p><span id="pot1" class="value">0</span></p>
+           <div class="sensor-button">
+               <a href="#" class="go-to-statistic">Ver Estadisticas</a>
+            </div>
+        </div>
+        
+        <div class="sensor-product">
+            <img src="imagenes/temperatura.png" alt="">
+            <div class="sensor-title">
+                <h3>Temperatura</h3>
+           </div>
+           <p><span id="pot2" class="value">0</span> </p>
+           <div class="sensor-button">
+               <a href="#" class="go-to-statistic">Ver Estadisticas</a>
+            </div>
+        </div>
+
+        <div class="sensor-product">
+            <img src="imagenes/ph.png" alt="">
+            <div class="sensor-title">
+                <h3>Ph</h3>
+           </div>
+           <p>
+               10
+           </p>
+           <div class="sensor-button">
+               <a href="#" class="go-to-statistic">Ver Estadisticas</a>
+            </div>
+        </div>
+
+        <div class="sensor-product">
+            <img src="imagenes/turbidez.png" alt="">
+            <div class="sensor-title">
+                <h3>Turbidez</h3>
+           </div>
+           <p>
+               30 NTU
+           </p>
+           <div class="sensor-button">
+               <a href="#" class="go-to-statistic">Ver Estadisticas</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
