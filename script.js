@@ -1,8 +1,9 @@
-const ws = new WebSocket(`ws://${window.location.hostname}/ws`);
- 
-     ws.onmessage = (event) => {
-        const[pot1, pot2] = event.data.split(",");
-        document.getElementById("pot1").innerText = pot1;
-        document.getElementById("pot2").innerText = pot2;
+const ws = new WebSocket("ws://<192.168.74.20>/ws");
 
-     };
+ws.onopen = () => console.log("Conexión WebSocket abierta");
+
+ws.onmessage = (event) => {
+  const data = JSON.parse(event.data);
+  document.getElementById("pot1").innerText = data.pot1;
+  document.getElementById("pot2").innerText = data.pot2;
+};
